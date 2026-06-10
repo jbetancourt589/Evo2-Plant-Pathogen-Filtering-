@@ -2107,7 +2107,7 @@ Botrytis,Botrytis pseudocinerea,GCA_019395245.1
 Botrytis,Botrytis sinoallii,GCA_014898435.1
 Botrytis,Botrytis squamosa,GCA_014898485.2
 Botrytis,Botrytis tulipae,GCA_004786125.1
-Bremia,Bremia lactucae,GCA_004359215.2
+Bremia,,
 Ceratobasidium,Ceratobasidium cereale,GCA_048999985.1
 Ceratobasidium,Ceratobasidium cereale,GCA_049000075.1
 Ceratobasidium,Ceratobasidium papillatum,GCA_037042815.1
@@ -6312,16 +6312,7 @@ Penicillium,Penicillium vulpinum,GCA_002072255.1
 Penicillium,Penicillium vulpinum,GCA_027569495.1
 Penicillium,Penicillium vulpinum,GCA_028829585.1
 Penicillium,Penicillium waksmanii,GCA_028829765.1
-Peronospora,Peronospora belbahrii,GCA_002864105.1
-Peronospora,Peronospora destructor,GCA_011800735.1
-Peronospora,Peronospora effusa,GCA_002245715.1
-Peronospora,Peronospora effusa,GCA_002245725.1
-Peronospora,Peronospora effusa,GCA_002245735.1
-Peronospora,Peronospora effusa,GCA_003704535.1
-Peronospora,Peronospora effusa,GCA_003843895.1
-Peronospora,Peronospora effusa,GCA_013122855.1
-Peronospora,Peronospora effusa,GCA_021491655.1
-Peronospora,Peronospora tabacina,GCA_002099245.1
+Peronospora,,
 Pestalotiopsis,Pestalotiopsis disseminata,GCA_055824565.1
 Pestalotiopsis,Pestalotiopsis fici W106-1,GCA_000516985.1
 Pestalotiopsis,Pestalotiopsis kenyana,GCA_018092595.1
@@ -6404,24 +6395,7 @@ Phymatotrichopsis,Phymatotrichopsis omnivora,GCA_016880775.1
 Phymatotrichopsis,Phymatotrichopsis omnivora,GCA_016880785.1
 Phymatotrichopsis,Phymatotrichopsis omnivora,GCA_016880835.1
 Phymatotrichopsis,Phymatotrichopsis omnivora,GCA_016880855.1
-Plasmopara,Plasmopara halstedii,GCA_003640465.1
-Plasmopara,Plasmopara halstedii,GCA_003640505.1
-Plasmopara,Plasmopara halstedii,GCA_003724065.1
-Plasmopara,Plasmopara halstedii,GCA_004380875.1
-Plasmopara,Plasmopara halstedii,GCA_051530165.1
-Plasmopara,Plasmopara halstedii,GCA_051820855.1
-Plasmopara,Plasmopara halstedii,GCA_051820915.1
-Plasmopara,Plasmopara muralis,GCA_003676415.1
-Plasmopara,Plasmopara obducens,GCA_003640485.1
-Plasmopara,Plasmopara obducens,GCA_003640625.1
-Plasmopara,Plasmopara viticola,GCA_001695595.3
-Plasmopara,Plasmopara viticola,GCA_001974925.1
-Plasmopara,Plasmopara viticola,GCA_003123765.1
-Plasmopara,Plasmopara viticola,GCA_055472655.1
-Plasmopara,Plasmopara viticola lesion associated botybirna 1,GCA_050925055.1
-Plasmopara,Plasmopara viticola lesion associated botybirna 2,GCA_050925035.1
-Plasmopara,Plasmopara viticola lesion associated toti 1,GCA_050925185.1
-Plasmopara,Plasmopara viticola lesion associated toti 3,GCA_050925205.1
+Plasmopara,,
 Pleurotus,Pleurotus citrinopileatus,GCA_003314595.1
 Pleurotus,Pleurotus citrinopileatus,GCA_017312325.1
 Pleurotus,Pleurotus cornucopiae,GCA_019677325.2
@@ -6485,8 +6459,7 @@ Pseudonectria,Pseudonectria buxi,GCA_003693515.1
 Pseudonectria,Pseudonectria buxi,GCA_003693545.1
 Pseudonectria,Pseudonectria foliicola,GCA_002911195.1
 Pseudonectria,Pseudonectria foliicola,GCA_003693505.1
-Pseudoperonospora,Pseudoperonospora cubensis,GCA_000252605.1
-Pseudoperonospora,Pseudoperonospora humuli,GCA_003991265.1
+Pseudoperonospora,,
 Puccinia,Puccinia arachidis,GCA_001013415.1
 Puccinia,Puccinia brachypodii,GCA_019395275.1
 Puccinia,Puccinia coronata f. sp. avenae,GCA_002873125.1
@@ -6806,7 +6779,7 @@ Septoria,Septoria petroselini,GCA_022559915.2
 Sphaceloma,Sphaceloma murrayae,GCA_002895985.1
 Sphacelotheca,,
 Sphaerotheca,,
-Spongospora,Spongospora subterranea f. sp. subterranea,GCA_049724395.1
+Spongospora,,
 Stemphylium,Stemphylium beticola,GCA_029100465.1
 Stemphylium,Stemphylium beticola,GCA_029100535.1
 Stemphylium,Stemphylium lycopersici,GCA_001191545.2
@@ -7134,7 +7107,6 @@ Venturia,Venturia asperata,GCA_003689065.1
 Venturia,Venturia asperata,GCA_003689335.1
 Venturia,Venturia asperata,GCA_003690305.1
 Venturia,Venturia aucupariae,GCA_003693225.1
-Venturia,Venturia canescens,GCA_019457755.1
 Venturia,Venturia carpophila,GCA_001990985.1
 Venturia,Venturia carpophila,GCA_014858625.1
 Venturia,Venturia effusa,GCA_001901625.1

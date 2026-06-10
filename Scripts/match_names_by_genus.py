@@ -8,6 +8,8 @@ Default inputs:
 
 Default outputs:
 - Results/Genus List & GenBank/organism_names_by_genus.csv
+- Results/Genus List & GenBank/fungal_organism_names.csv
+- Results/Genus List & GenBank/fungal_organism_assembly_ids.csv
 """
 
 import argparse
@@ -171,28 +173,42 @@ def main() -> None:
         raise ValueError(f"No genera loaded from {args.genus_file}")
 
     organism_rows = set()
+    fungal_organism_names = set()
+    fungal_organism_assembly_rows = set()
 
     total_rows = 0
+    fungi_rows = 0
     matched_rows = 0
     unmatched_rows = 0
-    excluded_virus_viroid_names = 0
+    excluded_fungal_virus_viroid_rows = 0
+    fungal_rows_written = 0
 
     organism_names_path = args.outdir / "organism_names_by_genus.csv"
+    fungal_names_path = args.outdir / "fungal_organism_names.csv"
+    fungal_assembly_ids_path = args.outdir / "fungal_organism_assembly_ids.csv"
 
     for _header, row in read_assembly_summary_rows(args.assembly_file):
         total_rows += 1
+        if row.get("group", "").casefold() != "fungi":
+            continue
+
+        fungi_rows += 1
         organism_name = row.get("organism_name", "")
+        assembly_id = row.get("assembly_accession", "")
         extracted_genus = extract_genus(organism_name)
 
-        if extracted_genus in genera:
-            matched_rows += 1
-            if is_virus_or_viroid_name(organism_name):
-                excluded_virus_viroid_names += 1
-            else:
-                assembly_id = row.get("assembly_accession", "")
-                organism_rows.add((extracted_genus, organism_name, assembly_id))
+        if is_virus_or_viroid_name(organism_name):
+            excluded_fungal_virus_viroid_rows += 1
         else:
-            unmatched_rows += 1
+            fungal_organism_names.add(organism_name)
+            fungal_organism_assembly_rows.add((organism_name, assembly_id))
+            fungal_rows_written += 1
+
+            if extracted_genus in genera:
+                matched_rows += 1
+                organism_rows.add((extracted_genus, organism_name, assembly_id))
+            else:
+                unmatched_rows += 1
 
     with organism_names_path.open("w", encoding="utf-8", newline="") as f:
         writer = csv.writer(f)
@@ -206,13 +222,30 @@ def main() -> None:
             for row in sorted(genus_rows, key=lambda item: (item[1], item[2])):
                 writer.writerow(row)
 
+    with fungal_names_path.open("w", encoding="utf-8", newline="") as f:
+        writer = csv.writer(f)
+        writer.writerow(["organism_name"])
+        for organism_name in sorted(fungal_organism_names):
+            writer.writerow([organism_name])
+
+    with fungal_assembly_ids_path.open("w", encoding="utf-8", newline="") as f:
+        writer = csv.writer(f)
+        writer.writerow(["organism_name", "assembly_id"])
+        for organism_name, assembly_id in sorted(fungal_organism_assembly_rows):
+            writer.writerow([organism_name, assembly_id])
+
     print("DONE: Genus matching complete.")
     print(f"Genera loaded: {len(genera)}")
     print(f"Assembly rows processed: {total_rows}")
+    print(f"Fungi rows processed: {fungi_rows}")
     print(f"Matched rows: {matched_rows}")
     print(f"Unmatched rows: {unmatched_rows}")
-    print(f"Virus/viroid names excluded from organism list: {excluded_virus_viroid_names}")
+    print(f"Fungal virus/viroid rows excluded: {excluded_fungal_virus_viroid_rows}")
+    print(f"Fungal organism rows written with assembly IDs: {fungal_rows_written}")
+    print(f"Unique fungal organism names written: {len(fungal_organism_names)}")
     print(f"Wrote: {organism_names_path}")
+    print(f"Wrote: {fungal_names_path}")
+    print(f"Wrote: {fungal_assembly_ids_path}")
 
 
 if __name__ == "__main__":
