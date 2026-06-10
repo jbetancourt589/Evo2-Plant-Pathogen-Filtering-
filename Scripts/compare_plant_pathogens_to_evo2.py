@@ -18,7 +18,7 @@ from pathlib import Path
 
 UC_IPM_URL = "https://ipm.ucanr.edu/PMG/diseases/diseaseslist.html"
 PROJECT_ROOT = Path(__file__).resolve().parent.parent
-PREPROCESSING_DATASETS_DIR = PROJECT_ROOT / "Datasets" / "Plant Pathogen Preprocessing Datasets"
+PREPROCESSING_DATASETS_DIR = PROJECT_ROOT / "Datasets" / "Plant Pathogen Preprocessing"
 PREPROCESSING_RESULTS_DIR = PROJECT_ROOT / "Results" / "Plant Pathogen Preprocessing Results"
 DEFAULT_COMBINED_PATHOGEN_FILE = PREPROCESSING_DATASETS_DIR / "combined_plant_pathogen_list.txt"
 DEFAULT_EUKARYOTIC_PATHOGEN_FILE = PREPROCESSING_DATASETS_DIR / "evo2_eukaryotic_dataset.txt"

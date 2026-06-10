@@ -15,7 +15,7 @@ FASTA_PATH = (
 OUTPUT_PATH = (
     PROJECT_ROOT
     / "Results"
-    / "Evo2 Data Reproduction #3"
+    / "Evo2 Data Reproduction 3"
     / "non_acgt_counts.txt"
 )
 ACGT = {"A", "C", "G", "T"}

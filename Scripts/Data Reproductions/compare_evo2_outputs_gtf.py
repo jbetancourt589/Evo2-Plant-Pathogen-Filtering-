@@ -1,4 +1,4 @@
-﻿#!/usr/bin/env python3
+#!/usr/bin/env python3
 """
 Shared Evo2/OpenGenome2 FASTA reproduction workflow.
 
@@ -1136,7 +1136,7 @@ def run_workflow(
     else:
         print("STRICT CLEAN OUTPUT FAILED: recreated FASTA contains N or non-ACGT bases.")
 
-PROJECT_ROOT = Path(__file__).resolve().parent.parent
+PROJECT_ROOT = Path(__file__).resolve().parents[2]
 DEFAULT_DATASET_DIR = PROJECT_ROOT / "Datasets" / "Evo2 Data Reproduction with GTF File"
 DEFAULT_ORIGINAL_PATH = DEFAULT_DATASET_DIR / "original_yeast_from_NCBI_GCF_000313485.1.fasta"
 DEFAULT_JOHN_PATH = None
