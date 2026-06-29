@@ -1,15 +1,22 @@
 #!/usr/bin/env python3
 """
-Shared Evo2/OpenGenome2 FASTA reproduction workflow.
+Compare Evo2 Data Reproduction 1 FASTA outputs.
 
-The recreated FASTA is intentionally strict:
-- valid sequence characters are only A, C, G, and T
-- N and all other ambiguity letters are break points
-- kept chunks must be at least 10,000 bp
-- chunk IDs use 0-based half-open coordinates
+Logic:
+1. Load the original NCBI FASTA, John's filtered FASTA, and OpenGenome/Evo2 FASTA.
+2. Recreate OpenGenome-like chunks using only A/C/G/T runs of at least 10,000 bp.
+3. Compare outputs, validate chunks, and write reports.
 
-Optional GTF/GFF annotation filtering removes only conservative, true
-centromere-region annotations before the strict sequence filtering runs.
+Inputs:
+- Datasets/Evo2 Data Reproduction 1/orginial_from_ncbi_GCA_000359685.2.fasta
+- Datasets/Evo2 Data Reproduction 1/john_filtered_GCA_000359685.2.fasta
+- Datasets/Evo2 Data Reproduction 1/open_genome2_filtered_GCA_000359685.2.fasta
+
+Outputs:
+- Results/Evo2 Data Reproduction 1/summary.txt
+- Results/Evo2 Data Reproduction 1/comparison_report.csv
+- Results/Evo2 Data Reproduction 1/opengenome_chunk_validation.csv
+- Results/Evo2 Data Reproduction 1/recreated_opengenome_like.fasta
 """
 
 import argparse

@@ -1,15 +1,20 @@
-#!/usr/bin/env python3
+﻿#!/usr/bin/env python3
 """
 Match organism names from a large NCBI assembly_summary file using a genus list.
 
-Default inputs:
-- Datasets/Genus List & GenBank/fungal_genus_only_no_duplicates.txt
-- Datasets/Genus List & GenBank/assembly_summary_genbank.txt
+Logic:
+1. Load target fungal genera.
+2. Stream GenBank eukaryote assembly rows and keep fungi.
+3. Write matched genus rows plus unique fungal names and assemblies.
 
-Default outputs:
-- Results/Genus List & GenBank/organism_names_by_genus.csv
-- Results/Genus List & GenBank/fungal_organism_names.csv
-- Results/Genus List & GenBank/fungal_organism_assembly_ids.csv
+Inputs:
+- Datasets/Genus List & GenBank/fungal_genus_only_no_duplicates.txt
+- Datasets/Genus List & GenBank/all_eukaryotes_and_assembly_genbank.txt
+
+Outputs:
+- Results/Genus List & GenBank/genbank_fungi_names_by_genus.csv
+- Results/Genus List & GenBank/genbank_fungi_unique_names.csv
+- Results/Genus List & GenBank/all_genbank_fungi_and_assemblyIDs.csv
 """
 
 import argparse
@@ -20,7 +25,7 @@ from pathlib import Path
 PROJECT_ROOT = Path(__file__).resolve().parents[1]
 DEFAULT_INPUT_DIR = PROJECT_ROOT / "Datasets" / "Genus List & GenBank"
 DEFAULT_GENUS_FILE = DEFAULT_INPUT_DIR / "fungal_genus_only_no_duplicates.txt"
-DEFAULT_ASSEMBLY_FILE = DEFAULT_INPUT_DIR / "assembly_summary_genbank.txt"
+DEFAULT_ASSEMBLY_FILE = DEFAULT_INPUT_DIR / "all_eukaryotes_and_assembly_genbank.txt"
 DEFAULT_OUTDIR = PROJECT_ROOT / "Results" / "Genus List & GenBank"
 
 
@@ -183,9 +188,9 @@ def main() -> None:
     excluded_fungal_virus_viroid_rows = 0
     fungal_rows_written = 0
 
-    organism_names_path = args.outdir / "organism_names_by_genus.csv"
-    fungal_names_path = args.outdir / "fungal_organism_names.csv"
-    fungal_assembly_ids_path = args.outdir / "fungal_organism_assembly_ids.csv"
+    organism_names_path = args.outdir / "genbank_fungi_names_by_genus.csv"
+    fungal_names_path = args.outdir / "genbank_fungi_unique_names.csv"
+    fungal_assembly_ids_path = args.outdir / "all_genbank_fungi_and_assemblyIDs.csv"
 
     for _header, row in read_assembly_summary_rows(args.assembly_file):
         total_rows += 1

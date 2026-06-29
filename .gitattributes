@@ -1,1 +1,4 @@
 Datasets/Genus[[:space:]]List[[:space:]]&[[:space:]]GenBank/assembly_summary_genbank.txt filter=lfs diff=lfs merge=lfs -text
+Datasets/Genus[[:space:]]List[[:space:]]&[[:space:]]GenBank/all_eukaryotes_and_assembly_genbank.txt filter=lfs diff=lfs merge=lfs -text
+Results/Bacteria/all_ncbi_bacteria_and_assemblyIDs.txt filter=lfs diff=lfs merge=lfs -text
+Results/Bacteria/bacteria_not_trained_by_evo2_with_assemblyIDs.txt filter=lfs diff=lfs merge=lfs -text

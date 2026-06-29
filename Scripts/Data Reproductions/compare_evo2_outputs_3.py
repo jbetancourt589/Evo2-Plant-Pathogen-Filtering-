@@ -1,15 +1,21 @@
 #!/usr/bin/env python3
 """
-Shared Evo2/OpenGenome2 FASTA reproduction workflow.
+Compare Evo2 Data Reproduction 3 FASTA outputs.
 
-The recreated FASTA is intentionally strict:
-- valid sequence characters are only A, C, G, and T
-- N and all other ambiguity letters are break points
-- kept chunks must be at least 10,000 bp
-- chunk IDs use 0-based half-open coordinates
+Logic:
+1. Load the original NCBI FASTA and OpenGenome/Evo2 FASTA.
+2. Recreate OpenGenome-like chunks using only A/C/G/T runs of at least 10,000 bp.
+3. Compare outputs, validate chunks, and write reports.
 
-Optional GTF/GFF annotation filtering removes only conservative, true
-centromere-region annotations before the strict sequence filtering runs.
+Inputs:
+- Datasets/Evo2 Data Reproduction 3/orginial_from_ncbi_GCA_001599115.1.fasta
+- Datasets/Evo2 Data Reproduction 3/open_genome2_filtered_GCA_001599115.1.fasta
+
+Outputs:
+- Results/Evo2 Data Reproduction 3/summary.txt
+- Results/Evo2 Data Reproduction 3/comparison_report.csv
+- Results/Evo2 Data Reproduction 3/opengenome_chunk_validation.csv
+- Results/Evo2 Data Reproduction 3/recreated_opengenome_like.fasta
 """
 
 import argparse
@@ -1137,12 +1143,12 @@ def run_workflow(
         print("STRICT CLEAN OUTPUT FAILED: recreated FASTA contains N or non-ACGT bases.")
 
 PROJECT_ROOT = Path(__file__).resolve().parents[2]
-DEFAULT_DATASET_DIR = PROJECT_ROOT / "Datasets" / "Evo2 Data Reproduction 2"
-DEFAULT_ORIGINAL_PATH = DEFAULT_DATASET_DIR / "orginial_from_ncbi_GCA_038094095.1.fasta"
-DEFAULT_JOHN_PATH = DEFAULT_DATASET_DIR / "john_filtered_GCA_038094095.1.fasta"
-DEFAULT_OPENGENOME_PATH = DEFAULT_DATASET_DIR / "open_genome2_filtered_GCA_038094095.1.fasta"
+DEFAULT_DATASET_DIR = PROJECT_ROOT / "Datasets" / "Evo2 Data Reproduction 3"
+DEFAULT_ORIGINAL_PATH = DEFAULT_DATASET_DIR / "orginial_from_ncbi_GCA_001599115.1.fasta"
+DEFAULT_JOHN_PATH = None
+DEFAULT_OPENGENOME_PATH = DEFAULT_DATASET_DIR / "open_genome2_filtered_GCA_001599115.1.fasta"
 DEFAULT_ANNOTATION_PATH = None
-DEFAULT_OUTDIR = PROJECT_ROOT / "Results" / "Evo2 Data Reproduction 2"
+DEFAULT_OUTDIR = PROJECT_ROOT / "Results" / "Evo2 Data Reproduction 3"
 
 
 def main() -> None:
@@ -1153,7 +1159,7 @@ def main() -> None:
         default_opengenome_path=DEFAULT_OPENGENOME_PATH,
         default_annotation_path=DEFAULT_ANNOTATION_PATH,
         default_outdir=DEFAULT_OUTDIR,
-        description="Compare John and OpenGenome/Evo2 filtered FASTA outputs.",
+        description="Compare OpenGenome/Evo2 filtered FASTA output to a recreated output.",
     )
 
 

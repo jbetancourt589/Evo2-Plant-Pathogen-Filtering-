@@ -1,5 +1,18 @@
 #!/usr/bin/env python3
-"""Count non-ACGT letters in the Evo2 Data Reproduction 3 OpenGenome2 FASTA."""
+"""
+Count non-ACGT letters in the Evo2 Data Reproduction 3 OpenGenome2 FASTA.
+
+Logic:
+1. Read sequence lines from the FASTA file.
+2. Count every character that is not A, C, G, or T.
+3. Write a small count summary.
+
+Inputs:
+- Datasets/Evo2 Data Reproduction 3/open_genome2_filtered_GCA_001599115.1.fasta
+
+Outputs:
+- Results/Evo2 Data Reproduction 3/non_acgt_counts.txt
+"""
 
 from collections import Counter
 from pathlib import Path

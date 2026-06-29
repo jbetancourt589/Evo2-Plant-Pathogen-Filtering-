@@ -19,3 +19,6 @@ dist/
 .pytest_cache/
 .coverage
 htmlcov/
+
+# Large local NCBI source database.
+Datasets/NCBI Database/NCBI_database.txt

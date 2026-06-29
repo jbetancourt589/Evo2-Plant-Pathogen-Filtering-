@@ -1,0 +1,63 @@
+# Y = found in the Evo2 organism file; N = not found.
+# Multiple assembly IDs mean multiple Evo2 assemblies matched the same pathogen.
+# Pathogen      Y/N     Assembly_IDs
+
+
+Agrobacterium albertimagni	Bacteria	Y	GCF_000300855.1
+Agrobacterium arsenijevicii	Bacteria	Y	GCA_000949895.1
+Agrobacterium bohemicum	Bacteria	Y	GCF_002896715.1
+Agrobacterium burrii	Bacteria	N
+Agrobacterium cavarae	Bacteria	Y	GCF_004310285.1
+Agrobacterium cucumeris	Bacteria	N
+Agrobacterium deltaense	Bacteria	N
+Agrobacterium fabrum	Bacteria	Y	GCA_003241215.1;GCF_000092025.1
+Agrobacterium larrymoorei	Bacteria	Y	GCF_005145045.1;GCF_013322225.1
+Agrobacterium leguminum	Bacteria	Y	GCF_015704895.1
+Agrobacterium pusense	Bacteria	Y	GCF_900102105.1
+Agrobacterium radiobacter	Bacteria	N
+Agrobacterium rhizogenes	Bacteria	N
+Agrobacterium rosae	Bacteria	Y	GCF_002915175.1
+Agrobacterium rubi	Bacteria	Y	GCF_000739935.1
+Agrobacterium salinitolerans	Bacteria	Y	GCF_002008225.1
+Agrobacterium tomkonis	Bacteria	N
+Agrobacterium tumefaciens	Bacteria	Y	GCA_017744915.1;GCF_000834635.1;GCF_001541315.1;GCF_005221325.1;GCF_005221385.1;GCF_009649785.1;GCF_013337285.1;GCF_017726655.1
+Agrobacterium vaccinii	Bacteria	Y	GCF_021310995.1
+Agrobacterium vitis	Bacteria	Y	GCA_014204625.1;GCF_001541345.2;GCF_001758275.2;GCF_009744115.1;GCF_013426735.1;GCF_021559775.1
+Brenneria alni	Bacteria	Y	GCF_003666245.1
+Brenneria nigrifluens	Bacteria	Y	GCF_005484965.1
+Brenneria roseae	Bacteria	Y	GCF_003115845.1
+Brenneria rubrifaciens	Bacteria	Y	GCF_005484945.1
+Brenneria salicis	Bacteria	Y	GCF_003315515.1
+Candidatus liberibacter	Bacteria	Y	GCA_003045065.1;GCA_016808295.1;GCF_000183665.1;GCF_000496595.1;GCF_000590865.3;GCF_001021085.1
+Clavibacter michiganensis	Bacteria	Y	GCA_002150995.1;GCF_001618005.1;GCF_002151125.1;GCF_002240565.1;GCF_016907085.1;GCF_021216655.1;GCF_021922985.1
+Erwinia amylovora	Bacteria	Y	GCF_017161565.1
+Erwinia billingiae	Bacteria	Y	GCF_000196615.1
+Erwinia carotovora	Bacteria	N
+Erwinia nigrifluens	Bacteria	N
+Erwinia oleae	Bacteria	Y	GCF_000770305.1
+Erwinia persicina	Bacteria	Y	GCF_001571305.1;GCF_014838825.1
+Erwinia piriflorinigrans	Bacteria	Y	GCF_001050515.1
+Erwinia plantamica	Bacteria	N
+Erwinia psidii	Bacteria	Y	GCF_003846135.1
+Erwinia pyri	Bacteria	N
+Erwinia pyrifoliae	Bacteria	Y	GCF_000026985.1
+Erwinia quercina	Bacteria	N
+Erwinia rhapontici	Bacteria	Y	GCF_012271765.1
+Erwinia rubrifaciens	Bacteria	N
+Erwinia sorbitola	Bacteria	Y	GCF_009738185.1
+Erwinia tracheiphila	Bacteria	Y	GCF_021365465.1
+Liberibacter africanus	Bacteria	N
+Liberibacter americanus	Bacteria	N
+Liberibacter asiaticus	Bacteria	N
+Liberibacter brunswickensis	Bacteria	N
+Liberibacter solanacearum	Bacteria	N
+Pantoea beijingensis	Bacteria	Y	GCF_022647505.1
+Pectobacterium carotovorum	Bacteria	Y	GCF_900129615.1
+Pseudomonas gladioli	Bacteria	N
+Pseudomonas syringae	Bacteria	Y	GCF_000452705.1;GCF_000507185.2;GCF_000737245.1;GCF_001293775.1;GCF_001698815.1;GCF_021605415.1;GCF_021606685.1;GCF_023278085.1
+Rhizobium rhizogenes	Bacteria	Y	GCA_002005205.3;GCA_013322215.1;GCF_000696095.1;GCF_000799715.1;GCF_007002745.1
+Xanthamonas campestris	Bacteria	N
+Xanthamonas fragariae	Bacteria	N
+Xanthomonas campestris	Bacteria	Y	GCF_000007145.1;GCF_012848175.1;GCF_020784175.1
+Xanthomonas fragariae	Bacteria	Y	GCF_017603965.1;GCF_900183975.1
+Xylella fastidiosa	Bacteria	Y	GCF_011801475.1

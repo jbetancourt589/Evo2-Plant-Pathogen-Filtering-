@@ -1,8 +1,21 @@
 #!/usr/bin/env python3
 """
-Compare plant pathogen names against the Evo2 eukaryotic and full training datasets.
+Compare plant pathogen names against Evo2 training datasets.
 
-RUN: python Scripts/compare_plant_pathogens_to_evo2.py
+Logic:
+1. Load plant pathogen names from UC IPM and the local combined pathogen list.
+2. Normalize names and load Evo2 assembly/species lookup tables.
+3. Write Y/N match reports for the eukaryotic and full Evo2 datasets.
+
+Inputs:
+- UC IPM disease list URL.
+- Datasets/Plant Pathogen Preprocessing & Evo2/combined_plant_pathogen_list.txt
+- Datasets/Plant Pathogen Preprocessing & Evo2/evo2_eukaryotic_dataset.txt
+- Datasets/Plant Pathogen Preprocessing & Evo2/evo2_full_training_dataset.txt
+
+Outputs:
+- Results/Plant Pathogen Preprocessing & Evo2 Results/plant_pathogens_vs._eukaryotes_evo2
+- Results/Plant Pathogen Preprocessing & Evo2 Results/plant_pathogen_vs._entire_evo2
 """
 
 import argparse
@@ -18,8 +31,8 @@ from pathlib import Path
 
 UC_IPM_URL = "https://ipm.ucanr.edu/PMG/diseases/diseaseslist.html"
 PROJECT_ROOT = Path(__file__).resolve().parent.parent
-PREPROCESSING_DATASETS_DIR = PROJECT_ROOT / "Datasets" / "Plant Pathogen Preprocessing"
-PREPROCESSING_RESULTS_DIR = PROJECT_ROOT / "Results" / "Plant Pathogen Preprocessing Results"
+PREPROCESSING_DATASETS_DIR = PROJECT_ROOT / "Datasets" / "Plant Pathogen Preprocessing & Evo2"
+PREPROCESSING_RESULTS_DIR = PROJECT_ROOT / "Results" / "Plant Pathogen Preprocessing & Evo2 Results"
 DEFAULT_COMBINED_PATHOGEN_FILE = PREPROCESSING_DATASETS_DIR / "combined_plant_pathogen_list.txt"
 DEFAULT_EUKARYOTIC_PATHOGEN_FILE = PREPROCESSING_DATASETS_DIR / "evo2_eukaryotic_dataset.txt"
 DEFAULT_EVO2_TRAINING_FILE = PREPROCESSING_DATASETS_DIR / "evo2_full_training_dataset.txt"
