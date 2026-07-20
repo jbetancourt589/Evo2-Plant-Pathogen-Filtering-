@@ -1,0 +1,134 @@
+# Y = found in the Evo2 organism file; N = not found.
+# Multiple assembly IDs mean multiple Evo2 assemblies matched the same pathogen.
+# Pathogen      Y/N     Assembly_IDs
+
+Phytophthora abietivora	Protist	N
+Phytophthora agathidicida	Protist	Y	GCA_025722995.1
+Phytophthora aleatoria	Protist	Y	GCA_018873745.1
+Phytophthora alni	Protist	N
+Phytophthora asiatica	Protist	N
+Phytophthora attenuata	Protist	N
+Phytophthora betacei	Protist	Y	GCA_011320135.1
+Phytophthora boehmeriae	Protist	Y	GCA_011947355.1
+Phytophthora brassicae	Protist	Y	GCA_024679045.1
+Phytophthora cactorum	Protist	Y	GCA_016864655.1
+Phytophthora cajani	Protist	Y	GCA_024679175.1
+Phytophthora cambivora	Protist	N
+Phytophthora capsici	Protist	Y	GCA_030324255.1
+Phytophthora castanetorum	Protist	N
+Phytophthora chlamydospora	Protist	Y	GCA_012295415.1
+Phytophthora cinnamomi	Protist	N
+Phytophthora citricola	Protist	Y	GCA_007655245.1
+Phytophthora citrophthora	Protist	Y	GCA_031305395.1
+Phytophthora colocasiae	Protist	Y	GCA_018806915.1
+Phytophthora constricta	Protist	Y	GCA_011947335.1
+Phytophthora crassamura	Protist	Y	GCA_033557995.1
+Phytophthora cryptogea	Protist	Y	GCA_000468175.2
+Phytophthora elongata	Protist	N
+Phytophthora europaea	Protist	Y	GCA_030463285.1
+Phytophthora flexuosa	Protist	N
+Phytophthora foliorum	Protist	Y	GCA_024679135.1
+Phytophthora formosa	Protist	N
+Phytophthora fragariae	Protist	Y	GCA_009729435.1
+Phytophthora fragariaefolia	Protist	Y	GCA_030267785.1
+Phytophthora gibbosa	Protist	N
+Phytophthora gonapodyides	Protist	Y	GCA_012295475.1
+Phytophthora gregata	Protist	N
+Phytophthora hedraiandra	Protist	N
+Phytophthora heterohybrida	Protist	N
+Phytophthora hibernalis	Protist	Y	GCA_012656075.1
+Phytophthora humicola	Protist	N
+Phytophthora idaei	Protist	Y	GCA_016880985.1
+Phytophthora incrassata	Protist	N
+Phytophthora infestans	Protist	Y	GCF_000142945.1
+Phytophthora infestans T30-4	Protist	Y	GCF_000142945.1
+Phytophthora intricata	Protist	N
+Phytophthora kernoviae	Protist	Y	GCA_008080845.1
+Phytophthora lateralis	Protist	Y	GCA_000500205.2
+Phytophthora lilii	Protist	N
+Phytophthora litchii	Protist	Y	GCA_002812785.1
+Phytophthora litoralis	Protist	N
+Phytophthora macrochlamydospora	Protist	Y	GCA_011947325.1
+Phytophthora meadii	Protist	Y	GCA_032432875.1
+Phytophthora megakarya	Protist	Y	GCA_002215365.1
+Phytophthora megasperma	Protist	N
+Phytophthora melonis	Protist	Y	GCA_024211575.1
+Phytophthora multivora	Protist	Y	GCA_001314345.1
+Phytophthora nagaii	Protist	N
+Phytophthora nicotianae	Protist	Y	GCF_000247585.1
+Phytophthora niederhauseri	Protist	Y	GCA_024679275.1
+Phytophthora ohioensis (nom. inval.)	Protist	Y	GCA_014706125.1
+Phytophthora oleae	Protist	N
+Phytophthora ornamentata	Protist	N
+Phytophthora palmivora	Protist	Y	GCA_008079305.1
+Phytophthora parvispora	Protist	Y	GCA_024679295.1
+Phytophthora pini	Protist	Y	GCA_023611945.1
+Phytophthora pinifolia	Protist	Y	GCA_000500225.2
+Phytophthora pisi	Protist	Y	GCA_024679225.1
+Phytophthora pistaciae	Protist	Y	GCA_024679115.1
+Phytophthora plurivora	Protist	Y	GCA_030027945.1
+Phytophthora pluvialis	Protist	Y	GCA_001314425.1
+Phytophthora podocarpi	Protist	Y	GCA_001314375.1
+Phytophthora pseudolactucae	Protist	N
+Phytophthora pseudosyringae	Protist	Y	GCA_019155715.1
+Phytophthora quercina	Protist	Y	GCA_014706105.1
+Phytophthora quininea	Protist	Y	GCA_011947345.1
+Phytophthora ramorum	Protist	Y	GCA_020800215.1
+Phytophthora rosacearum	Protist	N
+Phytophthora rubi	Protist	Y	GCA_000687305.2
+Phytophthora sansomeana	Protist	Y	GCA_032158285.1
+Phytophthora sojae	Protist	Y	GCF_000149755.1
+Phytophthora spp.	Protist	Y	GCA_000439335.1;GCA_000443045.1;GCA_000468175.2;GCA_000500205.2;GCA_000500225.2;GCA_000687305.2;GCA_001314345.1;GCA_001314375.1;GCA_001314425.1;GCA_002215365.1;GCA_002812785.1;GCA_007655245.1;GCA_008079305.1;GCA_008080845.1;GCA_009729435.1;GCA_011320135.1;GCA_011947325.1;GCA_011947335.1;GCA_011947345.1;GCA_011947355.1;GCA_012295415.1;GCA_012295475.1;GCA_012656075.1;GCA_012656105.1;GCA_014706105.1;GCA_014706125.1;GCA_014706135.1;GCA_014706145.1;GCA_016169955.1;GCA_016864655.1;GCA_016880985.1;GCA_018806915.1;GCA_018873745.1;GCA_019155715.1;GCA_020800215.1;GCA_023611945.1;GCA_024211575.1;GCA_024679045.1;GCA_024679075.1;GCA_024679115.1;GCA_024679135.1;GCA_024679175.1;GCA_024679225.1;GCA_024679275.1;GCA_024679295.1;GCA_025722995.1;GCA_030027945.1;GCA_030267785.1;GCA_030324255.1;GCA_030463285.1;GCA_031305395.1;GCA_032158285.1;GCA_032432875.1;GCA_033557915.1;GCA_033557925.1;GCA_033557995.1;GCA_033558005.1;GCA_033558025.1;GCF_000142945.1;GCF_000149755.1;GCF_000247585.1
+Phytophthora syringae	Protist	Y	GCA_012656105.1
+Phytophthora tentaculata	Protist	Y	GCA_033557915.1
+Phytophthora tubulina	Protist	Y	GCA_014706135.1
+Phytophthora uliginosa	Protist	Y	GCA_024679075.1
+Phytophthora vignae f. sp. vignae	Protist	Y	GCA_000439335.1;GCA_000443045.1;GCA_000468175.2;GCA_000500205.2;GCA_000500225.2;GCA_000687305.2;GCA_001314345.1;GCA_001314375.1;GCA_001314425.1;GCA_002215365.1;GCA_002812785.1;GCA_007655245.1;GCA_008079305.1;GCA_008080845.1;GCA_009729435.1;GCA_011320135.1;GCA_011947325.1;GCA_011947335.1;GCA_011947345.1;GCA_011947355.1;GCA_012295415.1;GCA_012295475.1;GCA_012656075.1;GCA_012656105.1;GCA_014706105.1;GCA_014706125.1;GCA_014706135.1;GCA_014706145.1;GCA_016169955.1;GCA_016864655.1;GCA_016880985.1;GCA_018806915.1;GCA_018873745.1;GCA_019155715.1;GCA_020800215.1;GCA_023611945.1;GCA_024211575.1;GCA_024679045.1;GCA_024679075.1;GCA_024679115.1;GCA_024679135.1;GCA_024679175.1;GCA_024679225.1;GCA_024679275.1;GCA_024679295.1;GCA_025722995.1;GCA_030027945.1;GCA_030267785.1;GCA_030324255.1;GCA_030463285.1;GCA_031305395.1;GCA_032158285.1;GCA_032432875.1;GCA_033557915.1;GCA_033557925.1;GCA_033557995.1;GCA_033558005.1;GCA_033558025.1;GCF_000142945.1;GCF_000149755.1;GCF_000247585.1
+Plasmodiophora brassicae	Protist	Y	GCA_039704465.1
+Pythium amasculinum	Protist	N
+Pythium angustatum	Protist	Y	GCA_023337915.1
+Pythium aphanidermatum	Protist	Y	GCA_000387445.2
+Pythium aphanidermatum DAOM BR444	Protist	Y	GCA_000387445.2
+Pythium apiculatum	Protist	N
+Pythium apleroticum	Protist	Y	GCA_023337875.1
+Pythium aquatile	Protist	Y	GCA_023337775.1
+Pythium aristosporum	Protist	Y	GCA_023337755.1
+Pythium arrhenomanes	Protist	Y	GCA_000387505.2
+Pythium biforme	Protist	Y	GCA_023337735.1
+Pythium brachiatum	Protist	Y	GCA_023337615.1
+Pythium catenulatum	Protist	Y	GCA_027475705.1
+Pythium cedri	Protist	N
+Pythium chondricola	Protist	Y	GCA_023337575.1
+Pythium coloratum	Protist	Y	GCA_023337545.1
+Pythium diclinum	Protist	Y	GCA_023337495.1
+Pythium dissimile	Protist	Y	GCA_023336445.1
+Pythium dissotocum	Protist	Y	GCA_023336355.1
+Pythium folliculosum	Protist	Y	GCA_023336295.1
+Pythium graminicola	Protist	Y	GCA_023336255.1
+Pythium grandisporangium	Protist	Y	GCA_023336285.1
+Pythium guiyangense	Protist	Y	GCA_003730235.1
+Pythium hydnosporum	Protist	N
+Pythium inflatum	Protist	Y	GCA_023336345.1
+Pythium insidiosum	Protist	Y	GCA_022836835.1
+Pythium lycopersicum	Protist	N
+Pythium monospermum	Protist	Y	GCA_023336165.1
+Pythium myriotylum	Protist	Y	GCA_023091665.1
+Pythium oligandrum	Protist	Y	GCA_020085045.1
+Pythium ornamentatum	Protist	N
+Pythium pectinolyticum	Protist	Y	GCA_023336095.1
+Pythium periplocum	Protist	Y	GCA_001922765.1
+Pythium phragmiticola	Protist	Y	GCA_023335935.1
+Pythium phragmitis	Protist	Y	GCA_023335925.1
+Pythium plurisporium	Protist	Y	GCA_023336035.1
+Pythium porphyrae	Protist	N
+Pythium pyrilobum	Protist	Y	GCA_023335905.1
+Pythium rhizo-oryzae	Protist	Y	GCA_027475725.1
+Pythium rishiriense	Protist	Y	GCA_023335895.1
+Pythium scleroteichum	Protist	Y	GCA_023335855.1
+Pythium spp.	Protist	Y	GCA_000387445.2;GCA_000387505.2;GCA_001922765.1;GCA_003730235.1;GCA_008271595.1;GCA_020085045.1;GCA_022836835.1;GCA_023091665.1;GCA_023334535.1;GCA_023334575.1;GCA_023334595.1;GCA_023334995.1;GCA_023335855.1;GCA_023335895.1;GCA_023335905.1;GCA_023335925.1;GCA_023335935.1;GCA_023336035.1;GCA_023336095.1;GCA_023336165.1;GCA_023336255.1;GCA_023336285.1;GCA_023336295.1;GCA_023336345.1;GCA_023336355.1;GCA_023336445.1;GCA_023337495.1;GCA_023337545.1;GCA_023337575.1;GCA_023337615.1;GCA_023337735.1;GCA_023337755.1;GCA_023337775.1;GCA_023337875.1;GCA_023337915.1;GCA_027475705.1;GCA_027475725.1;GCA_038050625.1
+Pythium sukuiense	Protist	Y	GCA_023334995.1
+Pythium torulosum	Protist	N
+Pythium utonaiense	Protist	Y	GCA_023334595.1
+Pythium vanterpoolii	Protist	Y	GCA_023334535.1
+Pythium violae	Protist	N
+Pythium volutum	Protist	Y	GCA_023334575.1

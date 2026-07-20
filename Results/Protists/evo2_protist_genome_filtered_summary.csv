@@ -1,0 +1,2 @@
+organism,assembly ID,size before filtering (MB),size after filtering (MB),# A removed,# C removed,# G removed,# T removed,# N removed
+Abeoforma whisleri,GCA_002812265.1,101.554,0.109,33435522,14482238,14509482,33375952,5641657

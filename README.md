@@ -32,25 +32,47 @@ Scripts:
 
 - `Scripts/Protists/ncbi_protists.py`
 - `Scripts/Protists/evo2_trained_protists.py`
+- `Scripts/Protists/evo2_protist_genome_filtering.py`
+- `Scripts/Protists/evo2_protist_genome_filtering_temp.py` temporary test copy
 
 Inputs:
 
 - `Datasets/NCBI Database/NCBI_database.txt`
 - `Datasets/Plant Pathogen Preprocessing & Evo2/evo2_eukaryotes_alphabetical.txt`
+- `Results/Protists/evo2_protists_names_and_assemblies.csv`
 
 Outputs:
 
 - `Results/Protists/ncbi_protist_names.csv`
 - `Results/Protists/ncbi_protists_names_and_assemblies.csv`
 - `Results/Protists/evo2_protists_names_and_assemblies.csv`
+- `Results/Protists/evo2_protist_genome_filtered.fasta`
+- `Results/Protists/evo2_protist_genome_filtered_summary.csv`
 
 The NCBI protist scripts use NCBI's `protozoa` group as the protist group. The Evo2 protist script starts from the Evo2 eukaryote training list, then uses the NCBI database to identify which Evo2 assemblies are protists.
+
+The Evo2 protist genome filtering script downloads original NCBI genome FASTA files into `Datasets/Protists/Protist Genomes NCBI/`, then writes a combined filtered FASTA containing only continuous `A/C/G/T` chunks at least 10,000 bp long. For GTF/GFF annotations, the script uses each assembly's NCBI `ftp_path` to try companion files ending in `_genomic.gtf.gz` and `_genomic.gff.gz`. If NCBI provides one, the script caches it in `Datasets/Protists/Protist Annotations NCBI/`, removes conservative true centromere-region intervals first, and then runs the same sequence filtering. Assemblies without GTF/GFF annotations skip that annotation step.
+
+The downloaded protist genome and annotation caches, plus generated protist FASTA outputs, are intentionally kept local and ignored by Git. The README keeps their expected paths documented so the workflow can recreate them when needed.
+
+The filtered summary reports organism, assembly ID, sequence size before and after filtering in megabases, and a removed-count column for every removed character observed in the run. For example, if an assembly contains removed `X` bases, the summary includes `# X removed`.
+
+By default, `evo2_protist_genome_filtering.py` filters every assembly listed in `Results/Protists/evo2_protists_names_and_assemblies.csv`. Use `--limit N` only when you want a smaller test run.
+
+`evo2_protist_genome_filtering_temp.py` is a scratch copy for repeated edits and test runs. It reads assembly IDs from `Datasets/Protists/list_of_50_test_protist_genomes_opengenom2.txt` by default and writes temp-specific outputs under `Results/Protists/`.
 
 Run:
 
 ```powershell
 uv run python Scripts/Protists/ncbi_protists.py
 uv run python Scripts/Protists/evo2_trained_protists.py
+uv run python Scripts/Protists/evo2_protist_genome_filtering.py
+```
+
+For a one-genome test run:
+
+```powershell
+uv run python Scripts/Protists/evo2_protist_genome_filtering.py --limit 1
 ```
 
 ## Bacteria

@@ -22,3 +22,10 @@ htmlcov/
 
 # Large local NCBI source database.
 Datasets/NCBI Database/NCBI_database.txt
+
+# Downloaded genome caches.
+Datasets/Protists/Protist Genomes NCBI/
+Datasets/Protists/Protist Annotations NCBI/
+
+# Generated protist FASTA outputs.
+Results/Protists/*.fasta
